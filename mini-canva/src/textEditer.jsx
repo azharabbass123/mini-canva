@@ -33,16 +33,16 @@ const TextEditor = () => {
   };
 
   return (
-    <div>
-      <canvas ref={canvasRef} width={800} height={600} />
-      <div>
+    <div className='textCanva-container'>
+      <canvas id='myCanvas' ref={canvasRef} width={400} height={300} />
+      <div className='text-controls-container'>
         <label>
-          Text:
-          <input type="text" value={text} onChange={handleTextChange} />
+          Enter your text:
+          <input className='input-text' type="text" value={text} onChange={handleTextChange} />
         </label>
         <label>
           Font Style:
-          <select value={fontStyle} onChange={handleFontStyleChange}>
+          <select value={fontStyle} className='font-style' onChange={handleFontStyleChange}>
             <option value="Arial">Arial</option>
             <option value="Verdana">Verdana</option>
             <option value="Helvetica">Helvetica</option>
@@ -51,11 +51,11 @@ const TextEditor = () => {
         </label>
         <label>
           Font Size:
-          <input type="number" value={fontSize} onChange={handleFontSizeChange} />
+          <input className='font-size' type="number" value={fontSize} onChange={handleFontSizeChange} />
         </label>
         <label>
           Color:
-          <input type="color" value={color} onChange={handleColorChange} />
+          <input className='text-color' type="color" value={color} onChange={handleColorChange} />
         </label>
       </div>
     </div>
