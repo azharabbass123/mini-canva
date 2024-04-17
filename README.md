@@ -23,6 +23,6 @@ Your app is ready to be deployed!
 
 ###  `Functionality`
 
-This is initial version for testing. It have following functionalities but needs some styling. 
+This is a initial version for testing. It have following functionalities but needs some styling. 
 In this version you can insert text, change font-size, color and font style.
 In image page, you need to upload on or more images then you can resize them rotate, zoom out, zomm in etc.
