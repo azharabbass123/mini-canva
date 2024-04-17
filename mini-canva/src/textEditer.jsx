@@ -57,7 +57,7 @@ const TextEditor = () => {
           <input className='text-color' type="color" value={color} onChange={handleColorChange} />
         </label>
       </div>
-      <canvas id='myCanvas' ref={canvasRef} width={400} height={300} />
+      <canvas id="text-canvas" className='myCanvas' ref={canvasRef} width={400} height={300} />
     </div>
   );
 };

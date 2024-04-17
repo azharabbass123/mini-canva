@@ -61,7 +61,7 @@ const ImageEditor = () => {
 
   return (
     <div className='image-editer-container'>
-      <canvas id="myCanvas" ref={canvasRef} width={500} height={400} onClick={() => handleSelectImage(null)} />
+      <canvas id="image-canvas" className="myCanvas" ref={canvasRef} width={500} height={400} onClick={() => handleSelectImage(null)} />
       <div>
       <input type="file" accept="image/*" onChange={handleImageUpload} />
         <button onClick={handleRotate}>Rotate</button>
