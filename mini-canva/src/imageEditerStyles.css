@@ -1,0 +1,15 @@
+.image-editer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .rotate-icon{
+    margin-right: 8px;
+  }
+  .zoom-in-icon{
+    margin-right: 8px;
+  }

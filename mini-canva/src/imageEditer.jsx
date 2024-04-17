@@ -1,5 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './App.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRotateRight } from '@fortawesome/free-solid-svg-icons';
+import './imageEditerStyles.css'
 
 const ImageEditor = () => {
   const canvasRef = useRef(null);
@@ -64,8 +67,8 @@ const ImageEditor = () => {
       <canvas id="image-canvas" className="myCanvas" ref={canvasRef} width={500} height={400} onClick={() => handleSelectImage(null)} />
       <div>
       <input type="file" accept="image/*" onChange={handleImageUpload} />
-        <button onClick={handleRotate}>Rotate</button>
-        <button onClick={() => handleResize(1.1)}>Zoom In</button>
+        <FontAwesomeIcon className='rotate-icon' onClick={handleRotate}  icon={faRotateRight} />
+        <button className='zoom-in-icon' onDoubleClick={() => handleResize(1.1)}>Zoom Out</button>
         <button onClick={() => handleResize(0.9)}>Zoom Out</button>
         {/* Add more buttons for other functionalities like adjusting multiple images, cropping, etc. */}
       </div>

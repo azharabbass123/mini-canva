@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import './textEditerStyles.css'
 
 const TextEditor = () => {
   const canvasRef = useRef(null);
