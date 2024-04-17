@@ -34,7 +34,6 @@ const TextEditor = () => {
 
   return (
     <div className='textCanva-container'>
-      <canvas id='myCanvas' ref={canvasRef} width={400} height={300} />
       <div className='text-controls-container'>
         <label>
           Enter your text:
@@ -51,13 +50,14 @@ const TextEditor = () => {
         </label>
         <label>
           Font Size:
-          <input className='font-size' type="number" value={fontSize} onChange={handleFontSizeChange} />
+          <input className='font-size' type="number" value= {fontSize} onChange={handleFontSizeChange} />
         </label>
         <label>
           Color:
           <input className='text-color' type="color" value={color} onChange={handleColorChange} />
         </label>
       </div>
+      <canvas id='myCanvas' ref={canvasRef} width={400} height={300} />
     </div>
   );
 };

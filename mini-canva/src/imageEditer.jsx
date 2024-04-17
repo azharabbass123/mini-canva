@@ -39,7 +39,7 @@ const ImageEditor = () => {
     reader.onload = (event) => {
       const img = new Image();
       img.onload = () => {
-        setImages([...images, { img, x: 400, y: 300, width: img.width, height: img.height }]);
+        setImages([...images, { img, x: 500, y: 400, width: img.width,height: img.height }]);
       };
       img.src = event.target.result;
     };
@@ -60,10 +60,10 @@ const ImageEditor = () => {
   };
 
   return (
-    <div>
-      <input type="file" accept="image/*" onChange={handleImageUpload} />
+    <div className='image-editer-container'>
       <canvas id="myCanvas" ref={canvasRef} width={500} height={400} onClick={() => handleSelectImage(null)} />
       <div>
+      <input type="file" accept="image/*" onChange={handleImageUpload} />
         <button onClick={handleRotate}>Rotate</button>
         <button onClick={() => handleResize(1.1)}>Zoom In</button>
         <button onClick={() => handleResize(0.9)}>Zoom Out</button>
