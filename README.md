@@ -1,5 +1,5 @@
 ### `npm i`
-After cloning this repository, run "npm i" command in terminal to download required node muodules.
+After cloning this repository, run "npm i" command in terminal to download required node modules.
 
 ### `npm start`
 
