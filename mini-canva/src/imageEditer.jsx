@@ -28,7 +28,7 @@ const ImageEditor = () => {
       ctx.translate(x, y);
       ctx.rotate(rotationAngle * Math.PI / 180);
       ctx.scale(scale, scale);
-      ctx.drawImage(img, -width / 2, -height / 2, width, height);
+      ctx.drawImage(img, -width/2 , -height/2 , width, height);
       ctx.restore();
       
       if (index === selectedImageIndex) {
@@ -47,14 +47,14 @@ const ImageEditor = () => {
     reader.onload = (event) => {
       const img = new Image();
       img.onload = () => {
-        setImages([...images, { img, x: 500, y: 400, width: img.width,height: img.height }]);
+        setImages([...images, { img, x: 500, y: 400, width: img.width, height: img.height }]);
       };
       img.src = event.target.result;
     };
     
     reader.readAsDataURL(file);
   };
-
+  
   const handleRotate = () => {
     setRotationAngle(rotationAngle + 90);
   };
@@ -82,7 +82,7 @@ const ImageEditor = () => {
                                     className="d-inline-block align-top"
                                     alt="React Bootstrap logo" /> 
                             </NavDropdown.Item> 
-                            <NavDropdown.Item > 
+                            <NavDropdown.Item  > 
                                 <img 
                                     src= {image2}
 
@@ -91,7 +91,7 @@ const ImageEditor = () => {
                                     className="d-inline-block align-top"
                                     alt="React Bootstrap logo" /> 
                             </NavDropdown.Item>
-                            <NavDropdown.Item > 
+                            <NavDropdown.Item  > 
                                 <img 
                                     src= {image3}
                                     width="40"
@@ -108,7 +108,7 @@ const ImageEditor = () => {
       <div>
       <input type="file" accept="image/*" onChange={handleImageUpload} />
         <FontAwesomeIcon className='rotate-icon' onClick={handleRotate}  icon={faRotateRight} />
-        <button className='zoom-in-icon' onDoubleClick={() => handleResize(1.1)}>Zoom Out</button>
+        <button className='zoom-in-icon' onDoubleClick={() => handleResize(1.1)}>Zoom In</button>
         <button onClick={() => handleResize(0.9)}>Zoom Out</button>
         
         {/* Add more buttons for other functionalities like adjusting multiple images, cropping, etc. */}
