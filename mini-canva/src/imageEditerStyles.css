@@ -16,6 +16,7 @@
   .canvas-image-container{
     display: flex;
     justify-content: center;
+    margin-top: 30px;
   }
   #image-canvas{
     flex: 5;
@@ -25,5 +26,12 @@
     margin-right: 20px;
   }
   #image-dropdown-container{
+    font-size: 1.2rem;
+  }
+  .image-dropdown-container1{
+    margin-top: 10px;
+    background-color: rgb(67, 180, 67);
+    border-radius: 5px;
+    height: 50px;
     font-size: 1.2rem;
   }

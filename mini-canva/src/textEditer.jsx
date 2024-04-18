@@ -3,7 +3,7 @@ import './textEditerStyles.css'
 
 const TextEditor = () => {
   const canvasRef = useRef(null);
-  const [text, setText] = useState("Sample Text");
+  const [text, setText] = useState("Enter your text");
   const [fontStyle, setFontStyle] = useState("Arial");
   const [fontSize, setFontSize] = useState(24);
   const [color, setColor] = useState("#000000");
@@ -53,7 +53,7 @@ const TextEditor = () => {
           <input className='font-size' type="number" value= {fontSize} onChange={handleFontSizeChange} />
         </label>
         <label>
-          Color:
+          Change color:
           <input className='text-color' type="color" value={color} onChange={handleColorChange} />
         </label>
       </div>
