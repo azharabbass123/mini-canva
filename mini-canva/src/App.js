@@ -13,7 +13,7 @@ function App() {
         <nav className='navbar'>
           <ul>
             <li>
-              <Link className={click ? 'nav-item' : 'nav-item active'} onClick={() => {setClick(false)}} to="/text">Text Editor</Link>
+              <Link className={click ? 'nav-item' : 'nav-item active'} onClick={() => {setClick(false)}} to="/text">Text Editor | </Link>
             </li>
             <li>
               <Link className={click ?'nav-item active' : 'nav-item'} onClick={() =>{setClick(true)}} to="/image">Image Editor</Link>

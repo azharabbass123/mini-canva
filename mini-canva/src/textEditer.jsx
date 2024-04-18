@@ -36,10 +36,9 @@ const TextEditor = () => {
   return (
     <div className='textCanva-container'>
       <div className='text-controls-container'>
-        <label>
-          Enter your text:
+        
           <input className='input-text' type="text" value={text} onChange={handleTextChange} />
-        </label>
+        
         <label>
           Font Style:
           <select value={fontStyle} className='font-style' onChange={handleFontStyleChange}>

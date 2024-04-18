@@ -13,3 +13,17 @@
   .zoom-in-icon{
     margin-right: 8px;
   }
+  .canvas-image-container{
+    display: flex;
+    justify-content: center;
+  }
+  #image-canvas{
+    flex: 5;
+  }
+  #image-dropdown-container{
+    flex: 1;
+    margin-right: 20px;
+  }
+  #image-dropdown-container{
+    font-size: 1.2rem;
+  }

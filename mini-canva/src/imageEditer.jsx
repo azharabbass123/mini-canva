@@ -64,7 +64,18 @@ const ImageEditor = () => {
 
   return (
     <div className='image-editer-container'>
+      <div className='canvas-image-container'>
+      <label id="image-dropdown-container">
+          Images
+          <select className='iamges-dropdown'>
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Helvetica">Helvetica</option>
+            {/* Add more font options */}
+          </select>
+        </label>
       <canvas id="image-canvas" className="myCanvas" ref={canvasRef} width={500} height={400} onClick={() => handleSelectImage(null)} />
+      </div>
       <div>
       <input type="file" accept="image/*" onChange={handleImageUpload} />
         <FontAwesomeIcon className='rotate-icon' onClick={handleRotate}  icon={faRotateRight} />
