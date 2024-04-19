@@ -1,29 +1,62 @@
-### `npm i`
-After cloning this repository, run "npm i" command in terminal to download required node modules.
+# `Mini Canva`
+## `Descriprion`
+This website allows users to perform various actions on two different pages:
 
-### `npm start`
+1.### `Text Editing Page`: On this page, users can enter text and customize it by changing its color, font size, font style, and more.
+2.### `Image EDiting Page`: On this page, users can upload an image and perform actions such as rotating, zooming in, and zooming out.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## `Features`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ ###`Text Editing page`
+      *Enter and customize text.
+      *Change text color.
+      *Adjust font size.
+      *Select font style.
+      *More text customization options.
 
-### `npm test`
+### `Image Editing Page`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    *Upload an image.
+    *Rotate the uploaded image.
+    *Zoom in and out of the image.
+    *Additional image editing options.
+## `Technologies Used`
+      *HTML
+      *CSS
+      *Javascript
+      *React js
+      *Bootstrap
+## `Installation`
+      1.Clone the repository:
+          git clone https://github.com/azharabbas123/mini-canva.git
+      2. Navigate to directory:
+          cd mini-canva
+      3. Run ### `npm i` command in terminal to download required node modules.
+      4. Run ### `npm start` command to run app in the development mode.\
+      Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+      The page will reload when you make changes.\
+      You may also see any lint errors in the console.
 
-### `npm run build`
+## `Usage`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.## `Text Editing`:
+        *Open the website and navigate to the Text Editing Page.
+        *Enter your desired text in the input field.
+        *Customize the text using the available options (color, font size, font style, etc.).
+        *Preview and save your changes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2.## `Image Editing`:
+         *Open the website and navigate to the Image Editing Page.
+          *Upload an image from your device.
+          *Perform actions such as rotating, zooming in, and zooming out to edit the image.
 
-###  `Functionality`
+## `Contribution`:
 
-This is a initial version for testing. It have following functionalities but needs some styling. 
-In this version you can insert text, change font-size, color and font style.
-In image page, you need to upload on or more images then you can resize them rotate, zoom out, zomm in etc.
+      1.Fork the repository.
+      2.Create a new branch (git checkout -b feature-name).
+      3.Make your changes and commit them (git commit -am 'Add new feature').
+      4.Push the changes to your branch (git push origin feature-name).
+      5.Create a pull request.
+
+## `Credits`
+      Azhar Abbass -Web Developer
