@@ -23,11 +23,11 @@ This website allows users to perform various actions on two different pages:
     * Zoom in and out of the image.
     * Additional image editing options.
 ## `Technologies Used`
-      *HTML
-      *CSS
-      *Javascript
-      *React js
-      *Bootstrap
+      1.HTML
+      2.CSS
+      3.Javascript
+      4.React js
+      5.Bootstrap
 ## `Installation`
       1.Clone the repository:
           git clone https://github.com/azharabbas123/mini-canva.git
@@ -41,16 +41,16 @@ This website allows users to perform various actions on two different pages:
 
 ## `Usage`
 
-1.## `Text Editing`:
-        * Open the website and navigate to the Text Editing Page.
-        * Enter your desired text in the input field.
-        * Customize the text using the available options (color, font size, font style, etc.).
-        * Preview and save your changes.
+1. ## `Text Editing`:
+         Open the website and navigate to the Text Editing Page.
+         Enter your desired text in the input field.
+         Customize the text using the available options (color, font size, font style, etc.).
+         Preview and save your changes.
 
-2.## `Image Editing`:
-         * Open the website and navigate to the Image Editing Page.
-          * Upload an image from your device.
-          * Perform actions such as rotating, zooming in, and zooming out to edit the image.
+2. ## `Image Editing`:
+          Open the website and navigate to the Image Editing Page.
+           Upload an image from your device.
+           Perform actions such as rotating, zooming in, and zooming out to edit the image.
 
 ## `Contribution`:
 
