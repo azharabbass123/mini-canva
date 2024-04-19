@@ -2,24 +2,26 @@
 ## `Descriprion`
 This website allows users to perform various actions on two different pages:
 
-1.### `Text Editing Page`: On this page, users can enter text and customize it by changing its color, font size, font style, and more.
-2.### `Image EDiting Page`: On this page, users can upload an image and perform actions such as rotating, zooming in, and zooming out.
+1. ### `Text Editing Page` :
+         On this page, users can enter text and customize it by changing its color, font size, font style, and more.
+3. ### `Image EDiting Page` :
+       On this page, users can upload an image and perform actions such as rotating, zooming in, and zooming out.
 
 ## `Features`
 
- ###`Text Editing page`
-      *Enter and customize text.
-      *Change text color.
-      *Adjust font size.
-      *Select font style.
-      *More text customization options.
+ ### `Text Editing page`
+      * Enter and customize text.
+      * Change text color.
+      * Adjust font size.
+      * Select font style.
+      * More text customization options.
 
 ### `Image Editing Page`
 
-    *Upload an image.
-    *Rotate the uploaded image.
-    *Zoom in and out of the image.
-    *Additional image editing options.
+    * Upload an image.
+    * Rotate the uploaded image.
+    * Zoom in and out of the image.
+    * Additional image editing options.
 ## `Technologies Used`
       *HTML
       *CSS
@@ -31,8 +33,8 @@ This website allows users to perform various actions on two different pages:
           git clone https://github.com/azharabbas123/mini-canva.git
       2. Navigate to directory:
           cd mini-canva
-      3. Run ### `npm i` command in terminal to download required node modules.
-      4. Run ### `npm start` command to run app in the development mode.\
+      3. Run npm i command in terminal to download required node modules.
+      4. Run npm start command to run app in the development mode.\
       Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
       The page will reload when you make changes.\
       You may also see any lint errors in the console.
@@ -40,15 +42,15 @@ This website allows users to perform various actions on two different pages:
 ## `Usage`
 
 1.## `Text Editing`:
-        *Open the website and navigate to the Text Editing Page.
-        *Enter your desired text in the input field.
-        *Customize the text using the available options (color, font size, font style, etc.).
-        *Preview and save your changes.
+        * Open the website and navigate to the Text Editing Page.
+        * Enter your desired text in the input field.
+        * Customize the text using the available options (color, font size, font style, etc.).
+        * Preview and save your changes.
 
 2.## `Image Editing`:
-         *Open the website and navigate to the Image Editing Page.
-          *Upload an image from your device.
-          *Perform actions such as rotating, zooming in, and zooming out to edit the image.
+         * Open the website and navigate to the Image Editing Page.
+          * Upload an image from your device.
+          * Perform actions such as rotating, zooming in, and zooming out to edit the image.
 
 ## `Contribution`:
 
