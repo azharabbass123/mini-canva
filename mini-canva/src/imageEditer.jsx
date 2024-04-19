@@ -3,11 +3,8 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRotateRight } from '@fortawesome/free-solid-svg-icons';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import './imageEditerStyles.css'
-import image1 from '../src/images/image-1.jpg'
-import image2 from '../src/images/image-2.jpg'
-import image3 from '../src/images/image-3.png'
+
 
 const ImageEditor = () => {
   const canvasRef = useRef(null);
@@ -70,48 +67,13 @@ const ImageEditor = () => {
   return (
     <div className='image-editer-container'>
       <div className='canvas-image-container'>
-        <div className='image-dropdown-container1'>
-        <NavDropdown title='Add Images'
-            id="collapsible-nav-dropdown" > 
-              <NavDropdown.Item > 
-                                <img 
-                                    src= 
-{image1}
-                                    width="40"
-                                    height="40px"
-                                    className="d-inline-block align-top"
-                                    alt="React Bootstrap logo" /> 
-                            </NavDropdown.Item> 
-                            <NavDropdown.Item  > 
-                                <img 
-                                    src= {image2}
-
-                                    width="40"
-                                    height="40px"
-                                    className="d-inline-block align-top"
-                                    alt="React Bootstrap logo" /> 
-                            </NavDropdown.Item>
-                            <NavDropdown.Item  > 
-                                <img 
-                                    src= {image3}
-                                    width="40"
-                                    height="40px"
-                                    className="d-inline-block align-top"
-                                    alt="React Bootstrap logo" /> 
-                            </NavDropdown.Item>
-                            <NavDropdown.Divider /> 
-                        </NavDropdown> 
-    </div>
-      
       <canvas id="image-canvas" className="myCanvas" ref={canvasRef} width={500} height={400} onClick={() => handleSelectImage(null)} />
       </div>
       <div>
       <input type="file" accept="image/*" onChange={handleImageUpload} />
         <FontAwesomeIcon className='rotate-icon' onClick={handleRotate}  icon={faRotateRight} />
         <button className='zoom-in-icon' onDoubleClick={() => handleResize(1.1)}>Zoom In</button>
-        <button onClick={() => handleResize(0.9)}>Zoom Out</button>
-        
-        {/* Add more buttons for other functionalities like adjusting multiple images, cropping, etc. */}
+        <button className='zoom-in-icon' onClick={() => handleResize(0.9)}>Zoom Out</button>
       </div>
     </div>
   );

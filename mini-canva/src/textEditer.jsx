@@ -45,7 +45,6 @@ const TextEditor = () => {
             <option value="Arial">Arial</option>
             <option value="Verdana">Verdana</option>
             <option value="Helvetica">Helvetica</option>
-            {/* Add more font options */}
           </select>
         </label>
         <label>
