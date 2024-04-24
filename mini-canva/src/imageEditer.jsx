@@ -36,7 +36,7 @@ const ImageEditor = () => {
       }
     });
   }, [images, rotationAngle, scale, selectedImageIndex]);
-
+// uploading image
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
     const reader = new FileReader();
@@ -51,11 +51,11 @@ const ImageEditor = () => {
     
     reader.readAsDataURL(file);
   };
-  
+  // rotateting image
   const handleRotate = () => {
     setRotationAngle(rotationAngle + 90);
   };
-
+// changing size of image
   const handleResize = (factor) => {
     setScale(scale * factor);
   };
